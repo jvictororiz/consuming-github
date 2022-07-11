@@ -6,11 +6,11 @@
 
 ## Buscando dados da API e fluxos de erro.
 <h1 align="center">
-  <img alt="WithNetwork" title="#WithNetwork" src="./screens/carregando_dados_network" />
+  <img alt="WithNetwork" title="#WithNetwork" src="screens/carregando_dados_network.mp4" />
 </h1>
 
 ## Buscando dados salvos no cache sem internet.
 <h1 align="center">
-  <img alt="WithNetwork" title="#WithNetwork" src="./screens/carregando_dados_cache" />
+  <img alt="WithNetwork" title="#WithNetwork" src="screens/carregando_dados_cache.mp4" />
 </h1>
 
