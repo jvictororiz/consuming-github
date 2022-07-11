@@ -2,7 +2,7 @@
 ## Descrição do Projeto
 <p align="center">Consumindo API do github</p>
 <p align="center">https://api.github.com/search/repositories?q=language:kotlin&sort=stars</p>
-<p align="center">Consumindo API do github</p>
+
 
 ## Buscando dados da API e fluxos de erro.
 <h1 align="center">
