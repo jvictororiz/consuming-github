@@ -11,8 +11,8 @@
 ----
 ### Tecnologias utilizados
 
-Linguagem: **Kotlin**
-Arquitetura: **MVVM**
-Bibliotecas: **Room database, Navigation, Courotines, View Binding, Glide , Retrofit , Koin**
-Bibliotecas de teste : **JUnit , MockK , Espresso, MockWebServer,Robot Pattern.**
+* Linguagem: **Kotlin**
+* Arquitetura: **MVVM**
+* Bibliotecas: **Room database, Navigation, Courotines, View Binding, Glide , Retrofit , Koin**
+* Bibliotecas de teste : **JUnit , MockK , Espresso, MockWebServer,Robot Pattern.**
 
