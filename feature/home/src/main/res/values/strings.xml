@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="message_error_multiples_requests">Houve um problema ao tentar fazer essa requisição, por favor, aguarde 1 minuto.</string>
+    <string name="message_error_default">Falha na conexão com o servidor, por favor, tente novamente mais tarde</string>
+    <string name="api_github">GITHUB</string>
+    <string name="without_connection_internet">Sem conexão com a internet</string>
+    <string name="reload">Recarregar</string>
+    <string name="no_internet_error_title">Ah não!</string>
+    <string name="no_internet_error_subtitle">Tem algo de errado com a sua conexão. Por favor, verifique sua internet</string>
+    <string name="try_again_text">Tentar novamente</string>
+</resources>

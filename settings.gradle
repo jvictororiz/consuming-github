@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Consuming Github"
+include ':app'
+include ':common:designsystem'
+include ':library:network'
+include ':library:persistence'
+include ':common:data'
+include ':feature:home'
+include ':common:util'
+include ':library:base'

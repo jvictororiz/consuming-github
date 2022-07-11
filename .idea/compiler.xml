@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="1.7">
+      <module name="Consuming_Github.app" target="11" />
+      <module name="Consuming_Github.common.designsystem" target="11" />
+      <module name="Consuming_Github.common.util" target="11" />
+      <module name="Consuming_Github.feature.home" target="11" />
+      <module name="Consuming_Github.libary.base" target="11" />
+      <module name="Consuming_Github.libary.network" target="11" />
+      <module name="Consuming_Github.libary.persistence" target="11" />
+      <module name="Consuming_Github.library.base" target="11" />
+      <module name="Consuming_Github.library.network" target="11" />
+      <module name="Consuming_Github.library.persistence" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

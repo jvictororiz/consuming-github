@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/small_margin"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/imgProfile"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:background="@color/shimmer_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".4"/>
+
+            <View
+                android:id="@+id/tvNameRepository"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:background="@color/shimmer_background"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgProfile"
+                app:layout_constraintTop_toTopOf="@+id/imgProfile"
+                tools:text="Repositório/joão victor" />
+
+            <View
+                android:id="@+id/tvNameOwner"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.4"
+                android:layout_height="30dp"
+                android:background="@color/shimmer_background"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                app:layout_constraintStart_toEndOf="@+id/imgProfile"
+                app:layout_constraintTop_toBottomOf="@+id/tvNameRepository" />
+
+            <View
+                android:id="@+id/tvLabel2"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.3"
+                android:layout_height="30dp"
+                android:background="@color/shimmer_background"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                app:layout_constraintStart_toEndOf="@+id/imgProfile"
+                app:layout_constraintTop_toBottomOf="@+id/tvNameOwner" />
+            <View
+                android:id="@+id/tvLabel3"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.4"
+                android:layout_height="30dp"
+                android:background="@color/shimmer_background"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                app:layout_constraintStart_toEndOf="@+id/imgProfile"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabel2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/small_margin"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/imgProfile2"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:background="@color/shimmer_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".4"/>
+
+            <View
+                android:id="@+id/tvNameRepository2"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:background="@color/shimmer_background"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgProfile2"
+                app:layout_constraintTop_toTopOf="@+id/imgProfile2"
+                tools:text="Repositório/joão victor" />
+
+            <View
+                android:id="@+id/tvNameOwner2"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.4"
+                android:layout_height="30dp"
+                android:background="@color/shimmer_background"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                app:layout_constraintStart_toEndOf="@+id/imgProfile2"
+                app:layout_constraintTop_toBottomOf="@+id/tvNameRepository2" />
+
+            <View
+                android:id="@+id/tvLabel22"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.3"
+                android:layout_height="30dp"
+                android:background="@color/shimmer_background"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                app:layout_constraintStart_toEndOf="@+id/imgProfile2"
+                app:layout_constraintTop_toBottomOf="@+id/tvNameOwner2" />
+            <View
+                android:id="@+id/tvLabel32"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.4"
+                android:layout_height="30dp"
+                android:background="@color/shimmer_background"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                app:layout_constraintStart_toEndOf="@+id/imgProfile2"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabel22" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/small_margin"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/imgProfile3"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:background="@color/shimmer_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".4"/>
+
+            <View
+                android:id="@+id/tvNameRepository3"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:background="@color/shimmer_background"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgProfile3"
+                app:layout_constraintTop_toTopOf="@+id/imgProfile3"
+                tools:text="Repositório/joão victor" />
+
+            <View
+                android:id="@+id/tvNameOwner3"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.4"
+                android:layout_height="30dp"
+                android:background="@color/shimmer_background"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                app:layout_constraintStart_toEndOf="@+id/imgProfile3"
+                app:layout_constraintTop_toBottomOf="@+id/tvNameRepository3" />
+
+            <View
+                android:id="@+id/tvLabel23"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.3"
+                android:layout_height="30dp"
+                android:background="@color/shimmer_background"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                app:layout_constraintStart_toEndOf="@+id/imgProfile3"
+                app:layout_constraintTop_toBottomOf="@+id/tvNameOwner3" />
+            <View
+                android:id="@+id/tvLabel33"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.4"
+                android:layout_height="30dp"
+                android:background="@color/shimmer_background"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                app:layout_constraintStart_toEndOf="@+id/imgProfile3"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabel23" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/small_margin"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/imgProfile4"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:background="@color/shimmer_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".4"/>
+
+            <View
+                android:id="@+id/tvNameRepository4"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:background="@color/shimmer_background"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgProfile4"
+                app:layout_constraintTop_toTopOf="@+id/imgProfile4"
+                tools:text="Repositório/joão victor" />
+
+            <View
+                android:id="@+id/tvNameOwner4"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.4"
+                android:layout_height="30dp"
+                android:background="@color/shimmer_background"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                app:layout_constraintStart_toEndOf="@+id/imgProfile4"
+                app:layout_constraintTop_toBottomOf="@+id/tvNameRepository4" />
+
+            <View
+                android:id="@+id/tvLabel24"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.4"
+                android:layout_height="30dp"
+                android:background="@color/shimmer_background"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                app:layout_constraintStart_toEndOf="@+id/imgProfile4"
+                app:layout_constraintTop_toBottomOf="@+id/tvNameOwner4" />
+            <View
+                android:id="@+id/tvLabel34"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.3"
+                android:layout_height="30dp"
+                android:background="@color/shimmer_background"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                app:layout_constraintStart_toEndOf="@+id/imgProfile4"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabel24" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+</com.facebook.shimmer.ShimmerFrameLayout>

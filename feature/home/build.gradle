@@ -1,0 +1,89 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
+    id 'kotlin-kapt'
+}
+
+
+android {
+    compileSdk 32
+
+    testOptions {
+        animationsDisabled = true
+        unitTests.includeAndroidResources = true
+        unitTests.returnDefaultValues = true
+    }
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 32
+        consumerProguardFiles "consumer-rules.pro"
+
+        testInstrumentationRunnerArguments clearPackageData: 'true'
+        testInstrumentationRunner "br.com.joaov.home.ui.fragment.basetest.MockTestRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    viewBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    // Dependency on a local library module
+    implementation project(":library:base")
+    implementation project(":library:network")
+    implementation project(":library:persistence")
+    implementation project(":common:designsystem")
+    implementation project(":common:util")
+
+    // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.2")
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.13.2'
+    implementation 'androidx.test.espresso:espresso-contrib:3.4.0'
+    kapt 'com.github.bumptech.glide:compiler:4.13.2'
+
+    //Shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+
+    //Test
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation "io.mockk:mockk:1.12.4"
+    testImplementation 'androidx.arch.core:core-testing:2.1.0'
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.2"
+    androidTestImplementation 'androidx.arch.core:core-testing:2.1.0'
+    androidTestImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.2"
+    testImplementation "androidx.room:room-testing:2.4.2"
+
+    androidTestImplementation "androidx.test:runner:1.4.0"
+    androidTestImplementation "androidx.test:rules:1.4.0"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.4.0"
+    androidTestImplementation "androidx.test:core-ktx:1.4.0"
+    androidTestImplementation  "com.squareup.okhttp3:mockwebserver:5.0.0-alpha.2"
+    androidTestImplementation 'androidx.test.ext:junit-ktx:1.1.3'
+    androidTestUtil "androidx.test:orchestrator:1.4.1"
+    androidTestImplementation "io.insert-koin:koin-test:2.2.2"
+    androidTestImplementation("androidx.fragment:fragment-testing:1.5.0")
+    androidTestImplementation "io.mockk:mockk-android:1.12.4"
+    implementation "androidx.test.espresso:espresso-idling-resource:3.4.0"
+
+
+}
