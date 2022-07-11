@@ -4,13 +4,10 @@
 <p align="center">https://api.github.com/search/repositories?q=language:kotlin&sort=stars</p>
 
 
-## Buscando dados da API e fluxos de erro.
-<h1 align="center">
-  <img alt="WithNetwork" title="#WithNetwork" src="./screens/carregando_dados_network" />
-</h1>
 
-## Buscando dados salvos no cache sem internet.
-<h1 align="center">
-  <img alt="WithNetwork" title="#WithNetwork" src="./screens/carregando_dados_cache" />
-</h1>
+
+| Consuming API | Consuming CACHE |
+| :---------------: | :---------------: |
+| <img src="https://raw.githubusercontent.com/jvictororiz/consuming-github/master/screens/carregando_dados_network.gif" align="center" width="70%"/> | <img src="https://raw.githubusercontent.com/jvictororiz/consuming-github/master/screens/carregando_dados_cache.gif" align="center" width="70%"/> |
+
 
