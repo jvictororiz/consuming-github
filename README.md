@@ -1,1 +1,16 @@
 # consuming-github
+## Descrição do Projeto
+<p align="center">Consumindo API do github</p>
+<p align="center">https://api.github.com/search/repositories?q=language:kotlin&sort=stars</p>
+<p align="center">Consumindo API do github</p>
+
+## Buscando dados da API e fluxos de erro.
+<h1 align="center">
+  <img alt="WithNetwork" title="#WithNetwork" src="./screens/carregando_dados_network" />
+</h1>
+
+## Buscando dados salvos no cache sem internet.
+<h1 align="center">
+  <img alt="WithNetwork" title="#WithNetwork" src="./screens/carregando_dados_cache" />
+</h1>
+
