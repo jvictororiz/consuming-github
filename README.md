@@ -16,3 +16,8 @@
 * Bibliotecas: **Room database, Navigation, Courotines, View Binding, Glide , Retrofit , Koin**
 * Bibliotecas de teste : **JUnit , MockK , Espresso, MockWebServer,Robot Pattern.**
 
+
+### Arquitetura
+
+<img src="https://raw.githubusercontent.com/jvictororiz/consuming-github/master/screens/modules.png" align="center" width="70%"/>
+
