@@ -25,9 +25,6 @@ internal class GithubRepositoryImpl(
             repositoryDao.saveRepositories(response.items.toListRepositoryEntity(page))
             Result.success(response)
         } catch (exception: Exception) {
-            Log.i("joao_victor",exception.message.toString())
-            exception.printStackTrace()
-            println("joao_victor$exception")
             when {
                 exception is IOException -> {
                     val localData = repositoryDao.getRepositoriesByPage(page).toListRepositoryModel()
