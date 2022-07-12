@@ -17,7 +17,7 @@
 * Bibliotecas de teste : **JUnit , MockK , Espresso, MockWebServer,Robot Pattern.**
 
 
-### Arquitetura
+### Modularização
 
 <img src="https://raw.githubusercontent.com/jvictororiz/consuming-github/master/screens/modules.png" align="center" width="70%"/>
 
