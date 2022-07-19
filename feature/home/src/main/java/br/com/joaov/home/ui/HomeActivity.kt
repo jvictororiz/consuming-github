@@ -20,9 +20,9 @@ internal class HomeActivity : AppCompatActivity() {
     }
     
     override fun onDestroy() {
-        super.onDestroy()
         unloadKoinModules(homeModules)
         unloadKoinModules(networkModule)
         unloadKoinModules(persistenceModule)
+        super.onDestroy()
     }
 }

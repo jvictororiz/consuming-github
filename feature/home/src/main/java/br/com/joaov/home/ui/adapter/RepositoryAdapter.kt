@@ -15,7 +15,11 @@ internal class RepositoryAdapter : ListAdapter<RepositoryModel, RepositoryAdapte
     var onClickItem: ((RepositoryModel) -> Unit)? = null
     
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        return ViewHolder(ItemRepositoryBinding.inflate(LayoutInflater.from(parent.context), parent, false).root)
+        return ViewHolder(
+            ItemRepositoryBinding.inflate(LayoutInflater.from(parent.context), parent, false),
+            onClickItem,
+            onClickUser
+        )
     }
     
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -30,9 +34,11 @@ internal class RepositoryAdapter : ListAdapter<RepositoryModel, RepositoryAdapte
         super.submitList(ArrayList(list?.toMutableList().orEmpty()), commitCallback)
     }
     
-    inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        
-        private val binding = ItemRepositoryBinding.bind(view)
+    class ViewHolder(
+        private val binding: ItemRepositoryBinding,
+        private val onClickItem: ((RepositoryModel) -> Unit)? = null,
+        private val onClickUser: ((RepositoryModel) -> Unit)? = null
+    ) : RecyclerView.ViewHolder(binding.root) {
         
         fun bind(repository: RepositoryModel) {
             binding.repositoryComponent.onClickItem = { repositoryModel -> repositoryModel?.let { onClickItem?.invoke(it) } }

@@ -1,6 +1,5 @@
 package br.com.joaov.home.data.repository
 
-import android.util.Log
 import br.com.joaov.home.data.repository.contract.GithubRepository
 import br.com.joaov.home.data.repository.mapper.toBaseRepositoryModel
 import br.com.joaov.home.data.repository.mapper.toListRepositoryEntity
